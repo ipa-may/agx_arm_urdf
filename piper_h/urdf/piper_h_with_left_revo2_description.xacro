@@ -14,13 +14,13 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://agx_arm_description/agx_arm_urdf/piper_h/meshes/dae/flange.dae"/>
+                <mesh filename="package://agx_arm_urdf/piper_h/meshes/dae/flange.dae"/>
             </geometry>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://agx_arm_description/agx_arm_urdf/piper_h/meshes/flange.stl"/>
+                <mesh filename="package://agx_arm_urdf/piper_h/meshes/flange.stl"/>
             </geometry>
         </collision>
     </link>

@@ -4,8 +4,8 @@
 
 本仓库包含 AgileX 系列机械臂的 URDF / Xacro 模型文件及对应的 3D 网格（mesh）资源，供 ROS / ROS2 可视化、仿真和运动规划使用。
 
-> **定位说明**：本仓库**主要服务于** [agx_arm_ros](https://github.com/agilexrobotics/agx_arm_ros) 主仓库（作为其中的子模块，与主仓内的 `agx_arm_description` 功能包一同安装）。  
-> 若你仅在非 AgileX 主仓场景下使用，可按下文「独立使用」自行创建**同名**功能包。
+> **定位说明**：本仓库是独立的 ROS 2 功能包，通过标准依赖方式供
+> [agx_arm_ros](https://github.com/ipa-may/agx_arm_ros) 和其他机器人描述使用。
 
 ---
 
@@ -52,10 +52,17 @@ agx_arm_urdf/
 
 ### 推荐：随主仓库使用
 
-通过 [agx_arm_ros](https://github.com/agilexrobotics/agx_arm_ros) 克隆（含子模块）：
+克隆 [agx_arm_ros](https://github.com/ipa-may/agx_arm_ros)，然后使用
+`vcstool` 导入本功能包：
 
 ```bash
-git clone -b ros2 --recurse-submodules https://github.com/agilexrobotics/agx_arm_ros.git
+mkdir -p ~/agx_arm_ws/src
+cd ~/agx_arm_ws/src
+git clone -b ros2 https://github.com/ipa-may/agx_arm_ros.git
+vcs import . < agx_arm_ros/dependencies.repos
+cd ..
+colcon build --packages-up-to agx_arm_description
+source install/setup.bash
 ```
 
 在 ROS2 中加载模型进行可视化（launch 由主仓提供）：
@@ -64,63 +71,24 @@ git clone -b ros2 --recurse-submodules https://github.com/agilexrobotics/agx_arm
 ros2 launch agx_arm_description display.launch.py arm_type:=piper
 ```
 
-更多用法请参阅 [agx_arm_ros 文档](https://github.com/agilexrobotics/agx_arm_ros)。
+更多用法请参阅 [agx_arm_ros 文档](https://github.com/ipa-may/agx_arm_ros)。
 
 ---
 
 ### 独立使用（自建工作空间）
 
-在不使用整个 `agx_arm_ros` 时，仍可只克隆本仓库，但需自己提供 **ROS 功能包**，且功能包**名称**必须为：`agx_arm_description`
-
-#### ROS 2（ament_cmake）
+本仓库已经包含 ROS 2 功能包元数据：
 
 ```bash
-mkdir -p ~/ws/src && cd ~/ws/src
-ros2 pkg create --build-type ament_cmake agx_arm_description
-cd agx_arm_description
-git clone https://github.com/agilexrobotics/agx_arm_urdf.git agx_arm_urdf
-```
-
-在包内 `CMakeLists.txt` 中配置：
-
-```cmake
-install(DIRECTORY agx_arm_urdf
-  DESTINATION share/${PROJECT_NAME}
-)
-```
-
-然后：
-
-```bash
+mkdir -p ~/ws/src
+cd ~/ws/src
+git clone https://github.com/ipa-may/agx_arm_urdf.git
 cd ~/ws
-colcon build --packages-select agx_arm_description
+colcon build --packages-select agx_arm_urdf
 source install/setup.bash
 ```
 
-#### ROS 1（catkin）
-
-```bash
-mkdir -p ~/catkin_ws/src && cd ~/catkin_ws/src
-catkin_create_pkg agx_arm_description
-cd agx_arm_description
-git clone https://github.com/agilexrobotics/agx_arm_urdf.git agx_arm_urdf
-```
-
-在包内 `CMakeLists.txt` 中配置：
-
-```cmake
-install(DIRECTORY agx_arm_urdf
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
-```
-
-然后：
-
-```bash
-cd ~/catkin_ws
-catkin_make   # 或 catkin build
-source devel/setup.bash
-```
+模型资源安装在 `share/agx_arm_urdf` 下。
 
 ---
 

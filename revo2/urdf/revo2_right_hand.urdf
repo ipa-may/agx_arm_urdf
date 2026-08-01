@@ -9,7 +9,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_base_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_base_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -18,7 +18,7 @@
   <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_base_visual_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_base_visual_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -27,7 +27,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_base_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -40,7 +40,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_metacarpal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_metacarpal_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -49,7 +49,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_metacarpal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_metacarpal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -69,7 +69,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_proximal_visual_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_proximal_visual_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -78,7 +78,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_proximal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -98,7 +98,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_distal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_distal_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -107,7 +107,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_distal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_distal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -136,7 +136,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_touch_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_touch_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -145,7 +145,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_touch_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_thumb_touch_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -164,7 +164,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_proximal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_proximal_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -173,7 +173,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_proximal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -193,7 +193,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_distal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_distal_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -202,7 +202,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_distal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_distal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -231,7 +231,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_touch_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_touch_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -240,7 +240,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_touch_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_index_touch_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -259,7 +259,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_proximal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_proximal_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -268,7 +268,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_proximal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -288,7 +288,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_distal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_distal_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -297,7 +297,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_distal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_distal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -326,7 +326,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_touch_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_touch_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -335,7 +335,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_touch_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_middle_touch_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -354,7 +354,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_proximal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_proximal_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -363,7 +363,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_proximal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -383,7 +383,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_distal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_distal_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -392,7 +392,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_distal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_distal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -421,7 +421,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_touch_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_touch_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -430,7 +430,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_touch_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_ring_touch_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -449,7 +449,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_proximal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_proximal_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -458,7 +458,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_proximal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_proximal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -478,7 +478,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_distal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_distal_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -487,7 +487,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_distal_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_distal_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -516,7 +516,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_touch_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_touch_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -525,7 +525,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://agx_arm_description/agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_touch_link.STL" />
+        <mesh filename="package://agx_arm_urdf/revo2/meshes/revo2_right_hand/right_pinky_touch_link.STL" />
       </geometry>
     </collision>
   </link>

@@ -12,13 +12,13 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://agx_arm_description/agx_arm_urdf/nero/meshes/dae/gripper_base.dae"/>
+                <mesh filename="package://agx_arm_urdf/nero/meshes/dae/gripper_base.dae"/>
             </geometry>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://agx_arm_description/agx_arm_urdf/nero/meshes/gripper_base.stl"/>
+                <mesh filename="package://agx_arm_urdf/nero/meshes/gripper_base.stl"/>
             </geometry>
         </collision>
     </link>
@@ -44,13 +44,13 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://agx_arm_description/agx_arm_urdf/nero/meshes/dae/gripper_link1.dae"/>
+                <mesh filename="package://agx_arm_urdf/nero/meshes/dae/gripper_link1.dae"/>
             </geometry>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://agx_arm_description/agx_arm_urdf/nero/meshes/gripper_link1.stl"/>
+                <mesh filename="package://agx_arm_urdf/nero/meshes/gripper_link1.stl"/>
             </geometry>
         </collision>
     </link>
@@ -71,13 +71,13 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://agx_arm_description/agx_arm_urdf/nero/meshes/dae/gripper_link2.dae"/>
+                <mesh filename="package://agx_arm_urdf/nero/meshes/dae/gripper_link2.dae"/>
             </geometry>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://agx_arm_description/agx_arm_urdf/nero/meshes/gripper_link2.stl"/>
+                <mesh filename="package://agx_arm_urdf/nero/meshes/gripper_link2.stl"/>
             </geometry>
         </collision>
     </link>

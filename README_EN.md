@@ -4,8 +4,9 @@
 
 This repository contains URDF / Xacro model files and 3D mesh resources for AgileX series robotic arms, for ROS / ROS2 visualization, simulation, and motion planning.
 
-> **Scope**: This repository **primarily serves** the [agx_arm_ros](https://github.com/agilexrobotics/agx_arm_ros) main workspace (as a submodule, installed with the `agx_arm_description` package there).  
-> If you use it outside the AgileX main repo, follow **Standalone use** below to create a **same-named** ROS package.
+> **Scope**: This repository is an independent ROS 2 package consumed by
+> [agx_arm_ros](https://github.com/ipa-may/agx_arm_ros) and other robot
+> descriptions through normal package dependencies.
 
 ---
 
@@ -52,10 +53,17 @@ agx_arm_urdf/
 
 ### Recommended: use with the main repository
 
-Clone [agx_arm_ros](https://github.com/agilexrobotics/agx_arm_ros) with submodules:
+Clone [agx_arm_ros](https://github.com/ipa-may/agx_arm_ros) and import this
+package with `vcstool`:
 
 ```bash
-git clone -b ros2 --recurse-submodules https://github.com/agilexrobotics/agx_arm_ros.git
+mkdir -p ~/agx_arm_ws/src
+cd ~/agx_arm_ws/src
+git clone -b ros2 https://github.com/ipa-may/agx_arm_ros.git
+vcs import . < agx_arm_ros/dependencies.repos
+cd ..
+colcon build --packages-up-to agx_arm_description
+source install/setup.bash
 ```
 
 Visualize the model in ROS2 (launch files are provided in the main repo):
@@ -64,63 +72,24 @@ Visualize the model in ROS2 (launch files are provided in the main repo):
 ros2 launch agx_arm_description display.launch.py arm_type:=piper
 ```
 
-For more details, see the [agx_arm_ros documentation](https://github.com/agilexrobotics/agx_arm_ros).
+For more details, see the [agx_arm_ros documentation](https://github.com/ipa-may/agx_arm_ros).
 
 ---
 
 ### Standalone use (your own workspace)
 
-If you do not use the full `agx_arm_ros` workspace, you may still clone only this repository, but you must provide your own **ROS package**, and the package **name** must be: **`agx_arm_description`**
-
-#### ROS 2 (ament_cmake)
+This repository already contains its ROS 2 package metadata:
 
 ```bash
-mkdir -p ~/ws/src && cd ~/ws/src
-ros2 pkg create --build-type ament_cmake agx_arm_description
-cd agx_arm_description
-git clone https://github.com/agilexrobotics/agx_arm_urdf.git agx_arm_urdf
-```
-
-In the package `CMakeLists.txt`:
-
-```cmake
-install(DIRECTORY agx_arm_urdf
-  DESTINATION share/${PROJECT_NAME}
-)
-```
-
-Then:
-
-```bash
+mkdir -p ~/ws/src
+cd ~/ws/src
+git clone https://github.com/ipa-may/agx_arm_urdf.git
 cd ~/ws
-colcon build --packages-select agx_arm_description
+colcon build --packages-select agx_arm_urdf
 source install/setup.bash
 ```
 
-#### ROS 1 (catkin)
-
-```bash
-mkdir -p ~/catkin_ws/src && cd ~/catkin_ws/src
-catkin_create_pkg agx_arm_description
-cd agx_arm_description
-git clone https://github.com/agilexrobotics/agx_arm_urdf.git agx_arm_urdf
-```
-
-In the package `CMakeLists.txt`:
-
-```cmake
-install(DIRECTORY agx_arm_urdf
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
-```
-
-Then:
-
-```bash
-cd ~/catkin_ws
-catkin_make   # or catkin build
-source devel/setup.bash
-```
+The model resources are installed under `share/agx_arm_urdf`.
 
 ---
 
