@@ -1,6 +1,11 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <xacro:macro name="piper_arm" params="prefix">
+  <xacro:macro
+    name="piper_arm"
+    params="prefix joint_limits_file:='$(find agx_arm_urdf)/piper/config/joint_position_limits.yaml'">
+    <xacro:property
+      name="joint_limits"
+      value="${xacro.load_yaml(joint_limits_file)['joint_limits']}" />
 
     <link name="${prefix}base_link">
       <inertial>
@@ -50,7 +55,11 @@
       <parent link="${prefix}base_link" />
       <child link="${prefix}link1" />
       <axis xyz="0 0 1" />
-      <limit lower="-2.6179938" upper="2.6179938" effort="100" velocity="5" />
+      <limit
+        lower="${joint_limits['joint1']['lower']}"
+        upper="${joint_limits['joint1']['upper']}"
+        effort="${joint_limits['joint1']['effort']}"
+        velocity="${joint_limits['joint1']['velocity']}" />
     </joint>
 
     <link name="${prefix}link2">
@@ -79,7 +88,11 @@
       <parent link="${prefix}link1" />
       <child link="${prefix}link2" />
       <axis xyz="0 0 1" />
-      <limit lower="0" upper="3.1415926" effort="100" velocity="5" />
+      <limit
+        lower="${joint_limits['joint2']['lower']}"
+        upper="${joint_limits['joint2']['upper']}"
+        effort="${joint_limits['joint2']['effort']}"
+        velocity="${joint_limits['joint2']['velocity']}" />
     </joint>
 
     <link name="${prefix}link3">
@@ -108,7 +121,11 @@
       <parent link="${prefix}link2" />
       <child link="${prefix}link3" />
       <axis xyz="0 0 1" />
-      <limit lower="-2.9670597" upper="0" effort="100" velocity="5" />
+      <limit
+        lower="${joint_limits['joint3']['lower']}"
+        upper="${joint_limits['joint3']['upper']}"
+        effort="${joint_limits['joint3']['effort']}"
+        velocity="${joint_limits['joint3']['velocity']}" />
     </joint>
 
     <link name="${prefix}link4">
@@ -137,7 +154,11 @@
       <parent link="${prefix}link3" />
       <child link="${prefix}link4" />
       <axis xyz="0 0 1" />
-      <limit lower="-1.7453292" upper="1.7453292" effort="100" velocity="5" />
+      <limit
+        lower="${joint_limits['joint4']['lower']}"
+        upper="${joint_limits['joint4']['upper']}"
+        effort="${joint_limits['joint4']['effort']}"
+        velocity="${joint_limits['joint4']['velocity']}" />
     </joint>
 
     <link name="${prefix}link5">
@@ -166,7 +187,11 @@
       <parent link="${prefix}link4" />
       <child link="${prefix}link5" />
       <axis xyz="0 0 1" />
-      <limit lower="-1.2217304" upper="1.2217304" effort="100" velocity="5" />
+      <limit
+        lower="${joint_limits['joint5']['lower']}"
+        upper="${joint_limits['joint5']['upper']}"
+        effort="${joint_limits['joint5']['effort']}"
+        velocity="${joint_limits['joint5']['velocity']}" />
     </joint>
 
     <link name="${prefix}link6">
@@ -195,7 +220,11 @@
       <parent link="${prefix}link5" />
       <child link="${prefix}link6" />
       <axis xyz="0 0 1" />
-      <limit lower="-2.0943951" upper="2.0943951" effort="100" velocity="5" />
+      <limit
+        lower="${joint_limits['joint6']['lower']}"
+        upper="${joint_limits['joint6']['upper']}"
+        effort="${joint_limits['joint6']['effort']}"
+        velocity="${joint_limits['joint6']['velocity']}" />
     </joint>
 
   </xacro:macro>
