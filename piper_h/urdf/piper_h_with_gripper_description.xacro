@@ -2,7 +2,7 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="piper_h">
-<xacro:include filename="$(find agx_arm_description)/agx_arm_urdf/piper_h/urdf/piper_h_description.urdf"/>
+<xacro:include filename="$(find agx_arm_urdf)/piper_h/urdf/piper_h_description.urdf"/>
     <link name="flange_link">
         <inertial>
             <origin xyz="1.151691e-03 0.782428e-03 4.798051e-03" rpy="0 0 0"/>
@@ -51,6 +51,14 @@
         <parent link="flange_link"/>
         <child link="gripper_base"/>
     </joint>
+
+    <link name="gripper_tcp"/>
+    <joint name="gripper_tcp_joint" type="fixed">
+        <origin xyz="0 0 0.138" rpy="0 0 0"/>
+        <parent link="gripper_base"/>
+        <child link="gripper_tcp"/>
+    </joint>
+    
     <link name="gripper_link"/>
     <joint name="gripper" type="prismatic">
         <origin xyz="0 0 0" rpy="0 0 0"/>
