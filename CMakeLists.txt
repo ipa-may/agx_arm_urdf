@@ -4,7 +4,7 @@ project(agx_arm_urdf)
 find_package(ament_cmake REQUIRED)
 
 install(
-  DIRECTORY nero piper piper_h piper_l piper_x revo2
+  DIRECTORY gripper nero piper piper_h piper_l piper_x revo2
   DESTINATION share/${PROJECT_NAME}
 )
 

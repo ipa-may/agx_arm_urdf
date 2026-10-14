@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find agx_arm_urdf)/piper_h/urdf/piper_h_arm.xacro"/>
+  <xacro:include filename="$(find agx_arm_urdf)/gripper/urdf/agx_gripper.xacro"/>
+
+  <xacro:macro name="piper_h_with_gripper" params="prefix">
+    <xacro:piper_h_arm prefix="${prefix}"/>
+    <xacro:piper_gripper_flange prefix="${prefix}" model="piper_h"/>
+    <xacro:agx_gripper prefix="${prefix}" model="piper_h" parent_link="flange_link"
+      base_xyz="0 0 0.0045" base_rpy="0 0 0"
+      finger1_rpy="1.5707963 0 0" finger2_rpy="1.5707963 0 -3.1415926"/>
+  </xacro:macro>
+</robot>
