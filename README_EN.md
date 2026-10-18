@@ -48,6 +48,19 @@ agx_arm_urdf/
 ```
 
 ---
+## Joint limits
+
+Taken from this document : https://www.agilex-italia.it/wp-content/uploads/2025/08/PiPER-XHL-EN.pdf
+
+| Joint | Piper H | Piper L | Piper X | Max. speed
+|---|---:|---:|---:|---:|
+| J1 | ±154° | ±154° | ±154° | 180°/s |
+| J2 | 0° to 195° | 0° to 195° | 0° to 195° | 195°/s |
+| J3 | −175° to 0° | −175° to 0° | −175° to 0° | 180°/s |
+| J4 | ±127° | ±127° | ±90° | 225°/s |
+| J5 | ±90° | ±90° | ±90° | 225°/s |
+| J6 | ±170° | ±170° | ±165° | 225°/s |
+
 
 ## Usage
 
